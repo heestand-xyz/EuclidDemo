@@ -1,4 +1,4 @@
-# Euclid RealityKit Bool Demo
+# RealityKit Bool Demo with Euclid
 
 This demo is made in SwiftUI for iOS & macOS.
 
