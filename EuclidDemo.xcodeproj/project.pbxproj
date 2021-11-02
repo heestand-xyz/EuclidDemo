@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E54429122731BCF600BCFB96 /* ViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54429112731BCF600BCFB96 /* ViewRepresentable.swift */; };
+		E54429132731BCF600BCFB96 /* ViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54429112731BCF600BCFB96 /* ViewRepresentable.swift */; };
 		E57F132C27158F6900152312 /* EuclidDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F131C27158F6800152312 /* EuclidDemoApp.swift */; };
 		E57F132D27158F6900152312 /* EuclidDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F131C27158F6800152312 /* EuclidDemoApp.swift */; };
 		E57F132E27158F6900152312 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F131D27158F6800152312 /* ContentView.swift */; };
 		E57F132F27158F6900152312 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F131D27158F6800152312 /* ContentView.swift */; };
 		E57F133027158F6900152312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57F131E27158F6900152312 /* Assets.xcassets */; };
 		E57F133127158F6900152312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57F131E27158F6900152312 /* Assets.xcassets */; };
+		E57F133C27158F7B00152312 /* Euclid in Frameworks */ = {isa = PBXBuildFile; productRef = E57F133B27158F7B00152312 /* Euclid */; };
+		E57F133F27158FAB00152312 /* Euclid in Frameworks */ = {isa = PBXBuildFile; productRef = E57F133E27158FAB00152312 /* Euclid */; };
+		E57F13412715943600152312 /* RealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F13402715943600152312 /* RealityView.swift */; };
+		E57F13422715943600152312 /* RealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F13402715943600152312 /* RealityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E54429112731BCF600BCFB96 /* ViewRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRepresentable.swift; sourceTree = "<group>"; };
 		E57F131C27158F6800152312 /* EuclidDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuclidDemoApp.swift; sourceTree = "<group>"; };
 		E57F131D27158F6800152312 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E57F131E27158F6900152312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E57F132327158F6900152312 /* EuclidDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EuclidDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57F132927158F6900152312 /* EuclidDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EuclidDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57F132B27158F6900152312 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E57F13402715943600152312 /* RealityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57F133C27158F7B00152312 /* Euclid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57F133F27158FAB00152312 /* Euclid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +58,7 @@
 				E57F131B27158F6800152312 /* Shared */,
 				E57F132A27158F6900152312 /* macOS */,
 				E57F132427158F6900152312 /* Products */,
+				E57F133D27158FAB00152312 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +67,8 @@
 			children = (
 				E57F131C27158F6800152312 /* EuclidDemoApp.swift */,
 				E57F131D27158F6800152312 /* ContentView.swift */,
+				E57F13402715943600152312 /* RealityView.swift */,
+				E54429112731BCF600BCFB96 /* ViewRepresentable.swift */,
 				E57F131E27158F6900152312 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -78,6 +91,13 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		E57F133D27158FAB00152312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +114,9 @@
 			dependencies = (
 			);
 			name = "EuclidDemo (iOS)";
+			packageProductDependencies = (
+				E57F133B27158F7B00152312 /* Euclid */,
+			);
 			productName = "EuclidDemo (iOS)";
 			productReference = E57F132327158F6900152312 /* EuclidDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 			dependencies = (
 			);
 			name = "EuclidDemo (macOS)";
+			packageProductDependencies = (
+				E57F133E27158FAB00152312 /* Euclid */,
+			);
 			productName = "EuclidDemo (macOS)";
 			productReference = E57F132927158F6900152312 /* EuclidDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -123,7 +149,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					E57F132227158F6900152312 = {
 						CreatedOnToolsVersion = 13.0;
@@ -142,6 +168,9 @@
 				Base,
 			);
 			mainGroup = E57F131627158F6800152312;
+			packageReferences = (
+				E57F133A27158F7B00152312 /* XCRemoteSwiftPackageReference "Euclid" */,
+			);
 			productRefGroup = E57F132427158F6900152312 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57F132E27158F6900152312 /* ContentView.swift in Sources */,
+				E54429122731BCF600BCFB96 /* ViewRepresentable.swift in Sources */,
+				E57F13412715943600152312 /* RealityView.swift in Sources */,
 				E57F132C27158F6900152312 /* EuclidDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57F132F27158F6900152312 /* ContentView.swift in Sources */,
+				E54429132731BCF600BCFB96 /* ViewRepresentable.swift in Sources */,
+				E57F13422715943600152312 /* RealityView.swift in Sources */,
 				E57F132D27158F6900152312 /* EuclidDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +352,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,7 +382,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,6 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -383,7 +417,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.heestand.EuclidDemo;
 				PRODUCT_NAME = EuclidDemo;
@@ -399,6 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -411,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.heestand.EuclidDemo;
 				PRODUCT_NAME = EuclidDemo;
@@ -452,6 +487,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E57F133A27158F7B00152312 /* XCRemoteSwiftPackageReference "Euclid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nicklockwood/Euclid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E57F133B27158F7B00152312 /* Euclid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E57F133A27158F7B00152312 /* XCRemoteSwiftPackageReference "Euclid" */;
+			productName = Euclid;
+		};
+		E57F133E27158FAB00152312 /* Euclid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E57F133A27158F7B00152312 /* XCRemoteSwiftPackageReference "Euclid" */;
+			productName = Euclid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E57F131727158F6800152312 /* Project object */;
 }
