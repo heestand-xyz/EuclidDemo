@@ -56,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				E57F131B27158F6800152312 /* Shared */,
-				E57F132A27158F6900152312 /* macOS */,
 				E57F132427158F6900152312 /* Products */,
 				E57F133D27158FAB00152312 /* Frameworks */,
 			);
@@ -70,6 +69,7 @@
 				E57F13402715943600152312 /* RealityView.swift */,
 				E54429112731BCF600BCFB96 /* ViewRepresentable.swift */,
 				E57F131E27158F6900152312 /* Assets.xcassets */,
+				E57F132B27158F6900152312 /* macOS.entitlements */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -81,14 +81,6 @@
 				E57F132927158F6900152312 /* EuclidDemo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E57F132A27158F6900152312 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				E57F132B27158F6900152312 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		E57F133D27158FAB00152312 /* Frameworks */ = {
@@ -342,6 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2QHTY6FMW2;
@@ -360,6 +353,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.heestand.EuclidDemo;
 				PRODUCT_NAME = EuclidDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -372,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2QHTY6FMW2;
@@ -390,6 +385,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.heestand.EuclidDemo;
 				PRODUCT_NAME = EuclidDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

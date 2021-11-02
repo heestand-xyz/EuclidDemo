@@ -12,8 +12,8 @@ import SceneKit
 
 struct ContentView: View {
     
-    @State var boxEntity: Entity?
     @State var sphereEntity: Entity?
+    @State var boxEntity: Entity?
     @State var euclidEntity: Entity?
 
     var body: some View {
@@ -21,43 +21,45 @@ struct ContentView: View {
             
             HStack {
                 
-                if let entity: Entity = boxEntity {
+                if let entity: Entity = sphereEntity {
                     RealityView(entity: entity)
                 }
                 
                 Text("-")
-                    .font(.system(size: 100, weight: .bold, design: .monospaced))
                 
-                if let entity: Entity = sphereEntity {
+                if let entity: Entity = boxEntity {
                     RealityView(entity: entity)
                 }
-            }
-            
-            Text("=")
-                .font(.system(size: 100, weight: .bold, design: .monospaced))
-            
-            if let entity: Entity = euclidEntity {
-                RealityView(entity: entity)
-            } else {
-                VStack {
+                
+                Text("=")
+                
+                if let entity: Entity = euclidEntity {
+                    RealityView(entity: entity)
+                } else {
                     ProgressView()
-                        .padding(20)
+                        .padding(100)
+                }
+            }
+            .font(.system(size: 100, weight: .bold, design: .monospaced))
+            
+            if euclidEntity == nil {
+                VStack {
                     Text("Euclid is processing the bool operation.")
                     Text("This can take a couple minutes with large meshes...")
                 }
-                .padding(50)
+                .padding(20)
             }
         }
         .onAppear {
             
-            let boxMesh: MeshResource = .generateBox(size: 1.0)
             let sphereMesh: MeshResource = .generateSphere(radius: 0.75)
+            let boxMesh: MeshResource = .generateBox(size: 1.0)
             
-            boxEntity = ModelEntity(mesh: boxMesh)
             sphereEntity = ModelEntity(mesh: sphereMesh)
+            boxEntity = ModelEntity(mesh: boxMesh)
             
-            let boxEuclidMesh: Mesh = toEuclid(mesh: boxMesh)
             let sphereEuclidMesh: Mesh = toEuclid(mesh: sphereMesh)
+            let boxEuclidMesh: Mesh = toEuclid(mesh: boxMesh)
             
             DispatchQueue.global(qos: .userInitiated).async {
             
