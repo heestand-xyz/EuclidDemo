@@ -23,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		E54429112731BCF600BCFB96 /* ViewRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRepresentable.swift; sourceTree = "<group>"; };
+		E54429142731C34B00BCFB96 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E57F131C27158F6800152312 /* EuclidDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuclidDemoApp.swift; sourceTree = "<group>"; };
 		E57F131D27158F6800152312 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E57F131E27158F6900152312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		E57F131627158F6800152312 = {
 			isa = PBXGroup;
 			children = (
+				E54429142731C34B00BCFB96 /* README.md */,
 				E57F131B27158F6800152312 /* Shared */,
 				E57F132427158F6900152312 /* Products */,
 				E57F133D27158FAB00152312 /* Frameworks */,

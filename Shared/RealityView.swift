@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import MultiViews
 import RealityKit
 
 struct RealityView: ViewRepresentable {

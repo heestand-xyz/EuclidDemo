@@ -47,9 +47,10 @@ struct ContentView: View {
                     Text("Euclid is processing the bool operation.")
                     Text("This can take a couple minutes with large meshes...")
                 }
-                .padding(20)
+                .padding(25)
             }
         }
+        .padding(25)
         .onAppear {
             
             let sphereMesh: MeshResource = .generateSphere(radius: 0.75)
